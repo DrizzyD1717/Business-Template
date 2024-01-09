@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: rgb(159, 157, 157);
+}
+
+body {
+  padding: 0 2rem 1rem 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem 1rem 0;
+  /* Added Code */
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+nav.nav-links ul {
+  list-style: none;
+}
+
+nav.nav-links ul li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+nav.nav-links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+section.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./black-bg8.jpeg);
+  color: white;
+  height: 280px;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+section.hero .hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+section.hero .hero-content p {
+  margin-bottom: 1.5rem;
+}
+
+section.hero .hero-content a {
+  width: 80px;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+}
+
+section.hero .hero-content a:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.second-part {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.second-part h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+section.about-team {
+  margin-top: 3rem;
+}
+
+section.about-team .about {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+section.about-team .about .left,
+section.about-team .team .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.about-team .about .left h3,
+section.about-team .team .left h3 {
+  margin-bottom: 0.5rem;
+  font-size: 13px;
+}
+
+section.about-team .about .left h4,
+section.about-team .team .left h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section.about-team .about .left p,
+section.about-team .team .left p {
+  margin-bottom: 1rem;
+}
+
+section.about-team a {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  width: 120px;
+}
+
+section.about-team a:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+section.about-team .team {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin: 2rem 0;
+}
+
+.about-us {
+  margin: 3rem 0 4rem 0;
+  margin-top: 3rem;
+}
+
+.about-us .center {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-us .about-us-divs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.about-us .about-us-divs .part h3 {
+  margin-bottom: 1rem;
+}
+
+.about-us .about-us-divs .part .date {
+  margin-bottom: 0.5rem;
+}
+
+section.footer {
+  background-color: antiquewhite;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.footer .content {
+  text-align: center;
+  padding: 2rem;
+}
+
+section.footer .content p {
+  margin-bottom: 1.5rem;
+}
+
+section.footer .content a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  width: 120px;
+}
+
+section.footer .content a:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsive Css */
+
+/* Responsive Navigation */
+
+#sub-menu {
+  width: 100%;
+  background-color: black;
+  padding: 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#sub-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sub-menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#sub-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#sub-menu ul li a:hover {
+  border: 1px solid black;
+}
+
+.uil-bars {
+  font-size: 2rem;
+  display: none;
+}
+
+#sub-menu .container {
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+
+.uil-times-circle {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.no-display {
+  display: none;
+}
+
+/* Responsive Page */
+
+@media (max-width: 700px) {
+  section.about-team .about,
+  section.about-team .team {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .about-us .about-us-divs {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .uil-bars {
+    display: inline-block;
+  }
+}
